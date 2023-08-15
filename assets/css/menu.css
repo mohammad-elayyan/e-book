@@ -1,0 +1,138 @@
+.burger {
+    border-radius: 50%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    border: 5px solid #2baf9f;
+    opacity: .98 !important;
+}
+
+.border {
+    border: 5px solid #000 !important;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 58.3%;
+    right: 38.9px;
+    width: 15px;
+    height: 20px;
+    background: #fff;
+    border-top-right-radius: 100%;
+    box-shadow: 0px -15px 0 0 rgba(43, 175, 159);
+    z-index: -1;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    top: 58.3%;
+    right: -17.1px;
+    width: 19px;
+    height: 20px;
+    background: #fff;
+    border-top-left-radius: 100%;
+    box-shadow: 0px -13px 0 0 rgba(43, 175, 159);
+    z-index: -1;
+}
+
+.circle2 {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2::before {
+    content: '';
+    position: absolute;
+    top: 58.3%;
+    right: 38.08px;
+    width: 17px;
+    height: 20px;
+    background: #fff;
+    border-top-right-radius: 100%;
+    z-index: 1;
+    box-shadow: 0px -13px 0 0 rgba(0, 0, 0);
+}
+
+.circle2::after {
+    content: '';
+    position: absolute;
+    top: 58.3%;
+    right: -17.1px;
+    width: 19px;
+    height: 20px;
+    background: #fff;
+    border-top-left-radius: 100%;
+    z-index: 1;
+    box-shadow: 0px -13px 0 0 rgba(0, 0, 0);
+}
+
+.navbar {
+    border-bottom: 25px solid #fff;
+}
+
+.navbar>div {
+    padding-right: var(--bs-gutter-x, 2rem);
+}
+
+.bar {
+    width: 23px;
+    height: 3px;
+    background: #2baf9f;
+    /* opacity: .75; */
+    margin: 2.1px 0;
+    transition: all .6s ease;
+    border-radius: 2px;
+}
+
+.menuBtn {
+    max-height: 180px;
+    cursor: pointer;
+}
+
+.menuIndex {
+    max-height: 60px !important;
+    cursor: default;
+}
+
+.col-md-6 img {
+    max-height: 80px;
+    height: auto;
+    user-select: none !important;
+    cursor: pointer;
+}
+
+.bg-success {
+    background-color: #2baf9f !important;
+    opacity: .9;
+    z-index: -1;
+}
+
+.bg-dark {
+    background-color: #000 !important;
+    opacity: .8;
+}
+
+@media only screen and (max-width:600px) {
+    .col-md-6 img {
+        max-height: 60px;
+        min-height: 58px;
+    }
+
+    .menuIndex {
+        max-height: 30px !important;
+    }
+}
