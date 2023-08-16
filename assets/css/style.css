@@ -81,7 +81,8 @@ html {
 
 .tools .sidebar-content .list {
     list-style: none;
-    cursor: pointer
+    cursor: pointer;
+    margin-top: -3px !important;
 }
 
 .tools .list .nav-link {
@@ -1132,7 +1133,7 @@ br {
     background: #ffffff url(../../preloader.gif);
     background-repeat: no-repeat;
     background-position: center;
-background-size: 5%;
+background-size: 10%;
     position: fixed;
     z-index: 100;
     display: flex;
